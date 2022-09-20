@@ -1,0 +1,52 @@
+@import 'vars.css';
+
+.l-gerenciador {
+    grid-area: gerenciador;
+    background-color: var(--color-dark);
+    min-height: 100vh;
+    color: white;
+}
+
+.c-gerenciador__logo {
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.c-gerenciador__logo span {
+    font-weight: 400;
+}
+
+.l-gerenciador__itens-menu {
+    width: 100%;
+}
+
+.c-gerenciador__iten {
+    display: flex;
+    padding: 5px 20px;
+    border-top: 1px solid white;
+    font-size: 16px;
+    align-items: center;
+}
+
+.c-gerenciador__a {
+    text-decoration: none;
+    color: white;
+}
+
+.c-gerenciador__iten:hover {
+    background-color: white;
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.active {
+    background-color: white;
+    color: var(--color-dark);
+}
+
+.c-gerenciador__iten:last-child {
+    border-bottom: 1px solid white;
+}

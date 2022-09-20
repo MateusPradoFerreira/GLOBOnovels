@@ -1,0 +1,102 @@
+@import 'vars.css';
+
+.l-main {
+    grid-area: main;
+    height: 100vh;
+}
+
+.c-main__header {
+    padding: 0 50px;
+    height: 10vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-main__button {
+    color: white;
+    background-color: var(--color-dark);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.c-main__table-bnt-ecxl {
+    color: white;
+    background-color: var(--color-past-red);
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.c-main__table-bnt-ecxl img {
+    width: 100%;
+    height: 100%;
+}
+
+.c-main__container {
+    height: 90vh;
+    background-color: var(--color-ligth-grey);
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+.c-main__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.c-main__table tr {
+    width: 100%;
+}
+
+.c-main__table tr:first-child {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+.c-main__table tr th {
+    padding: 12px 10px;
+    text-align: center;
+}
+
+.c-main__table tr th:nth-child(2) {
+    text-align: left;
+    width: 400px;
+}
+
+.c-main__table tr td {
+    padding: 5px 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-dark);
+    background-color: white;
+}
+
+.c-main__table tr td:nth-child(2) {
+    text-align: left;
+}
+
+/* formulario */
+
+.l-main__label {
+    padding-top: 20px;
+}
+
+.l-main__label:first-child {
+    padding-top: 0;
+}
+
+.l-main__label input {
+    width: 100%;
+    padding: 5px 0;
+    padding-left: 10px;
+}
+
+.l-main__label select {
+    width: 100%;
+    padding: 5px 0;
+    padding-left: 10px;
+}

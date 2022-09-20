@@ -1,0 +1,82 @@
+.c-main__container h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.c-sobre__conteudo {
+    display: grid;
+    grid-template-areas: 'sobre__column1 sobre__column2 sobre__column3';
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.c-sobre__column1 {
+    grid-area: sobre__column1;
+    padding: 15px;
+}
+
+.c-sobre__column2 {
+    grid-area: sobre__column2;
+    padding: 30px;
+    background-color: var(--color-past-red);
+    border-radius: 5px;
+}
+
+.c-sobre__column2 img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.c-sobre__column2 p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.c-sobre__column2 h2 {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.c-sobre__column3 {
+    grid-area: sobre__column3;
+    padding: 15px;
+}
+
+.c-sobre__column3 h1{
+    color: var(--color-dark);
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.c-sobre__column1 h1 {
+    color: var(--color-dark);
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.c-sobre__column1 h1 span {
+    font-weight: 400;
+}
+
+.c-sobre__bnt {
+    border: 2px solid var(--color-past-red);
+    background-color: transparent;
+    padding: 5px 40px;
+    margin-top: 40px;
+    color: var(--color-past-red);
+    font-weight: 650;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.c-sobre__bnt:hover {
+    background-color: var(--color-past-red);
+    color: white;
+}

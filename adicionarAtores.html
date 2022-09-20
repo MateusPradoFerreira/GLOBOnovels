@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="l-gerenciador">
+        <h1 class="c-gerenciador__logo">
+            GLOBO<span>novels</span>
+        </h1>
+        <div class="l-gerenciador__itens-menu">
+            <a href="index.php" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten ">
+                    Home
+                </div>
+            </a>
+            <a href="gerenciarAtores.php" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten active">
+                    Gerenciar Atores
+                </div>
+            </a>
+            <a href="gerenciarNovelas.php" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten">
+                    Gerenciar Novelas
+                </div>
+            </a>
+            <a href="sobre.html" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten">
+                    Sobre
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="l-main">
+        <div class="c-main__header">
+            Atores e Atrizes
+            <a href="gerenciarAtores.php"><button class="c-main__button">CANCELAR</button></a>
+        </div>
+        <div class="c-main__container">
+
+            <form action="gerenciarAtores.php" method="post">
+                <div for="" class="l-main__label">
+                    <p>Nome do(a) Ator(a)</p> 
+                    <input type="text" name="nomeAtor" id="" maxlength="100" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <p>Idade</p> 
+                    <input type="number" name="idade" id="" maxlength="3" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <p>Salario</p>
+                    <input type="number" name="salario" id="" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <p>Sexo</p>
+                    <select name="sexoAtor">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div for="" class="l-main__label">
+                    <p>Cidade de Nascimento</p> 
+                    <input type="text" name="cidadeAtor" id="" maxlength="20" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <button type="submit" class="c-main__button" name="addAtor">Adicionar</button>
+                </div>  
+            </form>
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="l-gerenciador">
+        <h1 class="c-gerenciador__logo">
+            GLOBO<span>novels</span>
+        </h1>
+        <div class="l-gerenciador__itens-menu">
+            <a href="index.php" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten ">
+                    Home
+                </div>
+            </a>
+            <a href="gerenciarAtores.php" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten">
+                    Gerenciar Atores
+                </div>
+            </a>
+            <a href="gerenciarNovelas.php" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten active">
+                    Gerenciar Novelas
+                </div>
+            </a>
+            <a href="sobre.html" class="c-gerenciador__a">
+                <div class="c-gerenciador__iten">
+                    Sobre
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="l-main">
+        <div class="c-main__header">
+            Novelas
+            <a href="gerenciarNovelas.php"><button class="c-main__button">CANCELAR</button></a>
+        </div>
+        <div class="c-main__container">
+
+            <form action="gerenciarNovelas.php" method="post">
+                <div for="" class="l-main__label">
+                    <p>Nome da Novela</p> 
+                    <input type="text" name="nomeNovela" id="" maxlength="100" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <p>Nº de Capítulos</p> 
+                    <input type="text" name="numeroCapitulo" id="" maxlength="20" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <p>Data do primeiro Capitulo</p>
+                    <input type="date" name="dataPriCap" id="" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <p>Data do último Capitulo</p>
+                    <input type="date" name="dataUltiCap" id="" required>
+                </div>
+                <div for="" class="l-main__label">
+                    <button type="submit" class="c-main__button" name="addNovela">Adicionar</button>
+                </div>  
+            </form>
+
+        </div>
+    </section>
+</body>
+
+</html>

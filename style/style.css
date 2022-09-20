@@ -1,0 +1,23 @@
+@import url(components/vars.css);
+
+/* Components */
+
+@import url(components/gerenciador.css);
+@import url(components/header.css);
+@import url(components/main.css);
+@import url(components/sobre.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--global-font-famyly);
+}
+
+body {
+    grid-template-areas:
+        'header header header'
+        'gerenciador main main';
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+}

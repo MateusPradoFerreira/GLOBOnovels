@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-past-red: #cd323f;
+    --color-past-bronw: #4e383d;
+    --color-dark: #1e1a1b;
+    --color-salmon: #febeac;
+    --color-past-yellow: #ebcc6e;
+    --color-ligth-grey: rgb(241, 241, 241);
+}
+
+:root {
+    --global-font-famyly: Hind;
+}
